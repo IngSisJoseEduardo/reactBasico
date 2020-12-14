@@ -1,15 +1,7 @@
 import  React  from 'react';
-function Header() {
-
-    const edad = 12;
-    let mensaje;
-    if(edad >= 18) {
-        mensaje = 'Eres mayor de edad';
-    } else {
-        mensaje = ' no eres mayor de edad';
-    }
+function Header({titulo}) {
     return(
-        <h1 id="encabezado" className="encabezado">{mensaje}</h1>
+        <h1 id="encabezado" className="encabezado">{titulo}</h1>
     )
 }
 
